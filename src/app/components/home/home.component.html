@@ -1,0 +1,154 @@
+<div class="container">
+  <button class="btn btn-success mt-4 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa fa-plus"></i>
+    Ürün Ekle
+  </button> <!-- ürün ekleme butonu -->
+
+  <hr>
+
+  <!-- Sepete ürün ekleme butonu -->
+  <div class="row">
+    <div class="col-md-3 mt-2" *ngFor="let product of products">
+      <div class="card" style="width: 18rem;">
+        <img [src]="product.urunResmi" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{product.urunAdi}}</h5>
+          <span>{{product.urunFiyati | number: '1.' }}TL</span>
+          <button class="btn btn-warning w-100 mt-2" (click)="sepeteUrunEkle(product)">
+            <i class="fa-solid fa-basket-shopping"></i>
+            Sepete Ekle
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ürün ekleme sekmesi içeriği -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ürün Ekleme</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="urunAdi">Ürün Adı</label>
+          <input type="text" [(ngModel)]="product.urunAdi" id="urunAdi" class="form-control">
+        </div>
+        <div class="form-group mt-2">
+          <label for="urunResmi">Ürün Resmi</label>
+          <input type="text" [(ngModel)]="product.urunResmi" id="urunResmi" class="form-control">
+        </div>
+        <div class="form-group mt-2">
+          <label for="urunResmi">Ürün Fiyatı</label>
+          <input type="text" [(ngModel)]="product.urunFiyati" id="urunFiyati" class="form-control">
+        </div>
+        <div class="form-group mt-2">
+          <button class="btn btn-primary w-100" (click)="urunEkle()">Ürün Ekle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<!-- Footer  bölümü-->
+<footer class="text-center text-lg-start bg-light text-muted">
+
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Social Networks</span>
+    </div>
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>IYI ALDIM LTD ŞTİ
+          </h6>
+          <p>
+            Şirket, Türkiye yasalarına göre iki veya daha fazla gerçek veya tüzel kişinin bir araya gelerek emek veya
+            mallarını müşterek bir amaçla bir sözleşme ile birleştirmeleri sonucu ortaya çıkan ticari işletmedir.
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">TypeScript</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">HTML</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">CSS</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Denizli, 20160, TR</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@iyialdim.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +90 507 830 17 17</p>
+          <p><i class="fas fa-print me-3"></i> +90 000 000 00 00 </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center p-4" style="background-color: rgba(9, 4, 133, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://iyialdim.com/">iyialdim.com</a>
+  </div>
+</footer>

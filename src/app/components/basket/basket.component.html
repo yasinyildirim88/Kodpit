@@ -1,0 +1,38 @@
+<div class="container">
+    <h2 class="alert alert-success mt-4">Sepetiniz</h2>
+    <table class="table table-hover mt-4"> <!-- Sepetdeki ürünlerin verileri -->
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ürün Adı</th>
+                <th>Ürün Resmi</th>
+                <th>Fiyatı</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let basket of baskets let index = index"> <!-- Sepetdeki ürünlerin Adı -->
+                <td>{{index +1 }}</td>
+                <td>{{basket.urunAdi }}</td>
+                <td>
+                    <img [src]="basket.urunResmi" width="50px" height="50px"> <!-- Sepetdeki ürünlerin resimleri -->
+                </td>
+               <td>{{basket.urunFiyati | number: '1.' }}TL</td>  <!-- Sepetdeki ürünlerin Fiyatı -->
+                <td>
+                    <button class="btn btn-outline-danger" (click)="delete(basket.id)"> <!-- Sepetdeki ürünleri Silme butonu -->
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <h5 class="alert alert-success mt-4">Sepet Tutarı: {{ totalBasketPrice | number: '1.2-2' }} TL</h5> <!-- Sepetdeki ürünlerin toplam Fiyatı -->
+    <table class="table table-hover mt-4"> </table>
+</div>
+
+<div class="container" style="margin-bottom: 30px;"> <!-- Alışverişe devam et ve ödeme yap butonu -->
+    <button class="btn btn-primary" routerLink="/">Alışverişe Devam Et</button>
+    <button class="btn btn-success" routerLink="/payment" style="float:inline-end;" >Ödeme Yap</button>
+</div>

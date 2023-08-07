@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "urunAdi": "Samsung Galaxy S23 Ultra 512 Gb Akıllı Telefon",
+      "urunResmi": "data:image/jpeg;base64,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",
+      "urunFiyati": "53000"
+    },
+    {
+      "id": 2,
+      "urunAdi": "Samsung Galaxy S23 256 Gb Akıllı Telefon Cream",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/137427-1_large.jpg",
+      "urunFiyati": "31000"
+    },
+    {
+      "id": 3,
+      "urunAdi": "Samsung Galaxy Z Fold 4 Akıllı Telefon Bej",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/134760-1_large.jpg",
+      "urunFiyati": "41500"
+    },
+    {
+      "id": 4,
+      "urunAdi": "Samsung Galaxy Z Flip 4 128 Gb Akıllı Telefon Mavi̇",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/134763-1_large.jpg",
+      "urunFiyati": "26000"
+    },
+    {
+      "id": 5,
+      "urunAdi": "iPhone 14 Pro Max 1 TB Akıllı Telefon Derin Mor",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/135195-1-16_large.jpg",
+      "urunFiyati": "87500"
+    },
+    {
+      "id": 6,
+      "urunAdi": "iPhone 14 Pro Max 128 Gb Akıllı Telefon Altın",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/135193-1-18_large.jpg",
+      "urunFiyati": "67000"
+    },
+    {
+      "id": 7,
+      "urunAdi": "iPhone 14 Plus 512 Gb Akıllı Telefon Mavi",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/135155-1-5_large.jpg",
+      "urunFiyati": "65500"
+    },
+    {
+      "id": 8,
+      "urunAdi": "iPhone 14 256 Gb Akıllı Telefon Yıldız Işığı",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/135147-1-7_large.jpg",
+      "urunFiyati": "48900"
+    },
+    {
+      "id": 9,
+      "urunAdi": "Xiaomi Redmi Note 12 Pro 8/256 Gb Akıllı Telefon Yıldız Mavi",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/139516-1_large.jpg",
+      "urunFiyati": "14000"
+    },
+    {
+      "id": 10,
+      "urunAdi": "Xiaomi Redmi Note 12 6GB/128GB Akıllı Telefon Yeşil",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/138399-1_large.jpg",
+      "urunFiyati": "10000"
+    },
+    {
+      "id": 11,
+      "urunAdi": "Xiaomi Redmi Note 11S 8GB/128GB Akıllı Telefon Mavi",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/138462-1_large.jpg",
+      "urunFiyati": "8850"
+    },
+    {
+      "id": 12,
+      "urunAdi": "Xiaomi Poco C40 3GB/32GB Akıllı Telefon Güç Siyahı",
+      "urunResmi": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/138384-1_large.jpg",
+      "urunFiyati": "4000"
+    }
+  ],
+  "baskets": []
+}
